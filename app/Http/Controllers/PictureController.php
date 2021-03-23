@@ -34,7 +34,6 @@ class PictureController extends Controller
   public function createPreSignedPost()
   {
     $awsClient = new S3Client([
-      'profile' => 'default',
       'version' => 'latest',
       'region' => env('AWS_DEFAULT_REGION')
     ]);
